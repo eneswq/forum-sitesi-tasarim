@@ -1,0 +1,142 @@
+/* Giriş Sayfası Stilleri */
+.login-container {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.login-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #6c5ce7;
+    outline: none;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.forgot-password {
+    color: #6c5ce7;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #5849c4;
+}
+
+.social-login {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-login p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-buttons button {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.google-btn:hover {
+    background: #f8f9fa;
+}
+
+.facebook-btn {
+    background: #1877f2;
+    color: rgba(42, 7, 197, 0.849) !important;  /* !important ekledik */
+    border: none;
+}
+
+.facebook-btn:hover {
+    background: #166fe5;
+}
+
+.facebook-btn i {
+    color: rgba(42, 7, 197, 0.849) !important;  /* İkon için de !important ekledik */
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #666;
+}
+
+.register-link a {
+    color: #6c5ce7;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

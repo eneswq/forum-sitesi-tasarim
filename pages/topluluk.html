@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topluluk - GençZone</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/topluluk.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Genç<span>Zone</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a href="kategori.html">Kategoriler</a></li>
+            <li><a href="giris.html">Giriş Yap</a></li>
+            <li><a href="kayit.html" class="kayit-btn">Kayıt Ol</a></li>
+        </ul>
+    </nav>
+
+    <!-- Topluluk Container -->
+    <div class="community-container">
+        <!-- Header -->
+        <div class="community-header">
+            <h1>Topluluk</h1>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Üye ara...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <select class="filter-select">
+                    <option value="all">Tümü</option>
+                    <option value="active">Aktif Üyeler</option>
+                    <option value="new">Yeni Üyeler</option>
+                    <option value="popular">Popüler Üyeler</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Members Grid -->
+        <div class="members-grid">
+            <!-- Üye Kartı 1 -->
+            <div class="member-card">
+                <div class="member-banner"></div>
+                <div class="member-avatar">
+                    
+                    <span class="status-badge online"></span>
+                </div>
+                <div class="member-info">
+                    <h3>Ahmet Yılmaz</h3>
+                    <span class="member-title">Teknoloji Tutkunu</span>
+                    <p class="member-bio">Yazılım geliştirici ve teknoloji meraklısı</p>
+                </div>
+                <div class="member-stats">
+                    <div class="stat">
+                        <span class="stat-value">156</span>
+                        <span class="stat-label">Gönderi</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">2.3K</span>
+                        <span class="stat-label">Takipçi</span>
+                    </div>
+                </div>
+                <button class="follow-btn">Takip Et</button>
+            </div>
+
+            <!-- Üye Kartı 2 -->
+            <div class="member-card">
+                <div class="member-banner"></div>
+                <div class="member-avatar">
+                   
+                    <span class="status-badge offline"></span>
+                </div>
+                <div class="member-info">
+                    <h3>Ayşe Demir</h3>
+                    <span class="member-title">Oyun Geliştiricisi</span>
+                    <p class="member-bio">Unity ile oyun geliştirme tutkunu</p>
+                </div>
+                <div class="member-stats">
+                    <div class="stat">
+                        <span class="stat-value">89</span>
+                        <span class="stat-label">Gönderi</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">1.1K</span>
+                        <span class="stat-label">Takipçi</span>
+                    </div>
+                </div>
+                <button class="follow-btn following">Takip Ediliyor</button>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <span class="page-dots">...</span>
+            <button class="page-btn">12</button>
+            <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GençZone. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>

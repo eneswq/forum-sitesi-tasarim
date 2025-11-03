@@ -1,0 +1,279 @@
+/* Profil Container */
+.profile-container {
+    max-width: 1200px;
+    margin: 7rem auto 3rem;
+    padding: 0 2rem;
+}
+
+/* Profil Banner */
+.profile-banner {
+    position: relative;
+    height: 300px;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Profil Avatar ve Bilgiler */
+.profile-info {
+    position: relative;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    z-index: 1;
+}
+
+.profile-avatar {
+    position: relative;
+    margin-right: 2rem;
+}
+
+.profile-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.edit-avatar {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--accent-color);
+    border: 2px solid white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+
+/* Profil Detayları */
+.profile-details {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Rozetler */
+.profile-badges {
+    display: flex;
+    gap: 1rem;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.badge.expert {
+    background: #ffd700;
+    color: #000;
+}
+
+.badge.active {
+    background: #00ff9d;
+    color: #000;
+}
+
+/* Profil Düzenleme Butonu */
+.edit-profile-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Profil İçeriği */
+.profile-content {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Tablar */
+.profile-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tab-btn:hover {
+    background: #f8f9fa;
+    color: var(--primary-color);
+}
+
+.tab-btn.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Konu Listesi */
+.topic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.topic-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.topic-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.topic-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.topic-info {
+    flex: 1;
+}
+
+.topic-info h3 {
+    margin-bottom: 0.5rem;
+}
+
+.topic-info h3 a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.topic-info h3 a:hover {
+    color: var(--accent-color);
+}
+
+.topic-info p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.topic-meta {
+    display: flex;
+    gap: 1rem;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-avatar {
+        margin: 0 0 1rem 0;
+    }
+
+    .profile-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .edit-profile-btn {
+        position: static;
+        margin-top: 1rem;
+    }
+
+    .profile-tabs {
+        flex-wrap: wrap;
+    }
+
+    .tab-btn {
+        flex: 1;
+        justify-content: center;
+    }
+}

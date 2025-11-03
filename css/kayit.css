@@ -1,0 +1,157 @@
+/* Kayıt Sayfası Stilleri */
+.register-container {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.register-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.register-box h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.form-terms {
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+.form-terms a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.form-terms a:hover {
+    text-decoration: underline;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-btn:hover {
+    background: #2980b9;
+}
+
+.social-register {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-register p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-buttons button {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.google-btn:hover {
+    background: #f8f9fa;
+}
+
+.facebook-btn {
+    background: #1877f2;
+    color: rgb(42, 23, 207) !important;
+    border: none;
+}
+
+
+.facebook-btn:hover {
+    background: #166fe5;
+}
+
+.facebook-btn i {
+    color: rgb(42, 23, 207) !important;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #666;
+}
+
+.login-link a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 576px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .register-box {
+        padding: 1.5rem;
+    }
+}

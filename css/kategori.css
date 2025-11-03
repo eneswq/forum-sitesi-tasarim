@@ -1,0 +1,136 @@
+/* Kategori Sayfası Stilleri */
+.categories-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.categories-container h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.category-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.category-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.category-card h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.category-stats {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.category-stats span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.category-stats i {
+    color: #3498db;
+}
+
+.category-btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.category-btn:hover {
+    background: #2980b9;
+}
+
+/* Hover Efektleri */
+.category-card:hover .category-icon {
+    animation: pulse 1s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .categories-container {
+        padding: 1rem;
+    }
+
+    .categories-container h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .category-card {
+        padding: 1.5rem;
+    }
+
+    .category-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .category-icon i {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,244 @@
+/* Topluluk Sayfası Stilleri */
+.community-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header Styles */
+.community-header {
+    margin-bottom: 3rem;
+}
+
+.community-header h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.search-box {
+    flex: 1;
+    position: relative;
+    max-width: 400px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.8rem 2.5rem 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.search-box i {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.filter-select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #2c3e50;
+    cursor: pointer;
+}
+
+/* Members Grid */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.member-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+}
+
+.member-banner {
+    height: 80px;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+}
+
+.member-avatar {
+    .member-avatar {
+        position: relative;
+        margin-top: -40px;
+        padding: 0 1.5rem;
+        width: 80px;
+        height: 80px;
+        background: #fff;  /* Beyaz arka plan */
+        border-radius: 50%;
+        margin-left: 1.5rem;
+    }
+    
+ } /* img ile ilgili stili kaldırdık */
+
+
+
+
+.status-badge {
+    position: absolute;
+    bottom: 5px;
+    right: 1.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.status-badge.online {
+    background: #2ecc71;
+}
+
+.status-badge.offline {
+    background: #95a5a6;
+}
+
+.member-info {
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+
+.member-info h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.member-title {
+    color: #3498db;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.member-bio {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.member-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-value {
+    color: #2c3e50;
+    font-weight: 600;
+    display: block;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.follow-btn {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background: #3498db;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.follow-btn:hover {
+    background: #2980b9;
+}
+
+.follow-btn.following {
+    background: #2ecc71;
+}
+
+.follow-btn.following:hover {
+    background: #27ae60;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.page-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-btn:hover {
+    border-color: #3498db;
+    color: #3498db;
+}
+
+.page-btn.active {
+    background: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.page-dots {
+    display: flex;
+    align-items: center;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .community-container {
+        padding: 1rem;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box {
+        max-width: none;
+    }
+
+    .members-grid {
+        grid-template-columns: 1fr;
+    }
+}
